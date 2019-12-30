@@ -86,6 +86,7 @@ public class Gui extends JFrame {
 		gbc_btnGenerate.gridx = 0;
 		gbc_btnGenerate.gridy = 1;
 		contentPane.add(btnGenerate, gbc_btnGenerate);
+		setLocationRelativeTo(null);
 	}
 
 }
