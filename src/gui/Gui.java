@@ -5,6 +5,9 @@ import java.awt.EventQueue;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
+
+import common.Information;
+
 import java.awt.GridBagLayout;
 import javax.swing.JTextField;
 import java.awt.GridBagConstraints;
@@ -35,9 +38,10 @@ public class Gui extends JFrame {
 	}
 
 	public Gui() {
-		setTitle("Password Generator");
+		setResizable(false);
+		setTitle("Password Generator " + Information.Version());
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 212, 104);
+		setBounds(100, 100, 310, 88);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
